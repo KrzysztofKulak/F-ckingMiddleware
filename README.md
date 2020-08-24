@@ -19,4 +19,8 @@ and in the JSON responses like:
 1. Copy `fuckingmiddleware.py` file into your middleware location.
 1. Add the path of the copied file to the `MIDDLEWARE` array in settings file of your Django project.
 
-The swear used by default is `you fucking idiot`, but you can customize it by setting `FUCKING_MIDDLEWARE_SWEAR` variable in the settings file of your Django project to the desired phrase.
+### Swear word customization
+
+The swear word used by default is `you fucking idiot`, but you can customize it by setting `FUCKING_MIDDLEWARE_SWEAR` variable in the settings file of your Django project to the desired phrase.
+
+__IMPORTANT__: Don't use period sign nor `</h1>` tag in the phrase, because it will probably create infinite loop and crash your app (and, if we're lucky, create the black hole that will consume the universe).
